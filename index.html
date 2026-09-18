@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HiddenIndia | Discover the Unseen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: "#173F35",
+            terracotta: "#B94E32",
+            sand: "#E7B65A",
+            ivory: "#F7F0E3",
+            charcoal: "#29251F",
+            sage: "#6E8068"
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f0e3;
+      color: #29251f;
+    }
+
+    .destination-card {
+      transition: 0.35s ease;
+    }
+
+    .destination-card:hover {
+      transform: translateY(-7px);
+    }
+
+    .destination-card img {
+      transition: 0.5s ease;
+    }
+
+    .destination-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-item {
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      transition: 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .modal {
+      animation: fadeIn 0.25s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-forest border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="text-2xl font-bold text-ivory tracking-wide">
+        Hidden<span class="text-sand">India</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-sm text-ivory">
+        <a href="#home" class="hover:text-sand transition">Home</a>
+        <a href="#destinations" class="hover:text-sand transition">Destinations</a>
+        <a href="#stories" class="hover:text-sand transition">Stories</a>
+        <a href="#gallery" class="hover:text-sand transition">Gallery</a>
+        <a href="#about" class="hover:text-sand transition">About</a>
+      </div>
+
+      <a href="#destinations"
+         class="hidden md:block bg-sand text-charcoal px-5 py-2 rounded-full font-semibold text-sm hover:bg-white transition">
+        Explore
+      </a>
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+  <section id="home" class="min-h-screen bg-forest pt-24 flex items-center">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14 items-center">
+
+      <div>
+        <p class="uppercase tracking-[5px] text-sand text-sm mb-6">
+          Travel Beyond The Ordinary
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-bold text-ivory leading-tight">
+          Discover the
+          <span class="text-sand">India</span>
+          you haven't seen.
+        </h1>
+
+        <p class="text-ivory/75 text-lg leading-8 mt-7 max-w-xl">
+          From forgotten villages and ancient ruins to misty mountains
+          and untouched coastlines, explore the quieter side of India.
+        </p>
+
+        <div class="mt-9 flex flex-wrap gap-4">
+          <a href="#destinations"
+             class="bg-terracotta text-white px-7 py-3 rounded-full font-semibold hover:bg-sand hover:text-charcoal transition">
+            Explore Hidden Places
+          </a>
+
+          <a href="#stories"
+             class="border border-ivory/40 text-ivory px-7 py-3 rounded-full font-semibold hover:bg-ivory hover:text-forest transition">
+            Read Stories
+          </a>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6 mt-12 max-w-md">
+          <div>
+            <h3 class="text-3xl font-bold text-sand">12+</h3>
+            <p class="text-ivory/60 text-sm mt-1">Hidden Places</p>
+          </div>
+
+          <div>
+            <h3 class="text-3xl font-bold text-sand">6</h3>
+            <p class="text-ivory/60 text-sm mt-1">Regions</p>
+          </div>
+
+          <div>
+            <h3 class="text-3xl font-bold text-sand">1</h3>
+            <p class="text-ivory/60 text-sm mt-1">Adventure</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img
+          src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=85"
+          class="w-full h-[620px] object-cover rounded-[40px]"
+          alt="Indian landscape">
+
+        <div class="absolute bottom-7 left-7 bg-ivory p-5 rounded-2xl max-w-xs">
+          <p class="text-xs uppercase tracking-widest text-terracotta font-bold">
+            Featured Journey
+          </p>
+
+          <h3 class="text-xl font-bold mt-2">
+            Roads Less Travelled
+          </h3>
+
+          <p class="text-sm text-charcoal/60 mt-2">
+            There is more to India than the places everyone knows.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- INTRO -->
+  <section id="about" class="py-24 bg-ivory">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <p class="text-terracotta uppercase tracking-[4px] text-sm font-bold">
+        The Hidden Side Of India
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-bold text-forest mt-4">
+        India has stories beyond the tourist map.
+      </h2>
+
+      <p class="text-charcoal/65 text-lg leading-8 mt-7 max-w-3xl mx-auto">
+        HiddenIndia is a visual journey through places that often remain
+        outside the usual travel lists. Discover landscapes, cultures,
+        architecture and stories that deserve another look.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-14">
+
+        <div class="bg-white p-8 rounded-3xl">
+          <div class="text-4xl mb-5">01</div>
+          <h3 class="text-xl font-bold text-forest">Rare Places</h3>
+          <p class="text-charcoal/60 mt-3 leading-7">
+            Discover destinations that offer something different from
+            conventional tourist routes.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl">
+          <div class="text-4xl mb-5">02</div>
+          <h3 class="text-xl font-bold text-forest">Local Stories</h3>
+          <p class="text-charcoal/60 mt-3 leading-7">
+            Learn about the history, traditions and communities behind
+            each destination.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl">
+          <div class="text-4xl mb-5">03</div>
+          <h3 class="text-xl font-bold text-forest">Slow Travel</h3>
+          <p class="text-charcoal/60 mt-3 leading-7">
+            Travel with curiosity, spend more time exploring and notice
+            the details others might miss.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- DESTINATIONS -->
+  <section id="destinations" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <p class="text-terracotta uppercase tracking-[4px] text-sm font-bold">
+            Explore
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-bold text-forest mt-3">
+            Hidden Destinations
+          </h2>
+
+          <p class="text-charcoal/60 mt-4 max-w-xl">
+            Click on any destination to discover its story, highlights,
+            best season and travel experience.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- FILTERS -->
+      <div class="flex flex-wrap gap-3 mb-10">
+
+        <button onclick="filterPlaces('all')"
+          class="filter-btn bg-forest text-white px-5 py-2 rounded-full text-sm">
+          All
+        </button>
+
+        <button onclick="filterPlaces('south')"
+          class="filter-btn bg-ivory text-forest px-5 py-2 rounded-full text-sm">
+          South India
+        </button>
+
+        <button onclick="filterPlaces('north')"
+          class="filter-btn bg-ivory text-forest px-5 py-2 rounded-full text-sm">
+          North India
+        </button>
+
+        <button onclick="filterPlaces('east')"
+          class="filter-btn bg-ivory text-forest px-5 py-2 rounded-full text-sm">
+          East India
+        </button>
+
+        <button onclick="filterPlaces('west')"
+          class="filter-btn bg-ivory text-forest px-5 py-2 rounded-full text-sm">
+          West India
+        </button>
+
+        <button onclick="filterPlaces('northeast')"
+          class="filter-btn bg-ivory text-forest px-5 py-2 rounded-full text-sm">
+          Northeast
+        </button>
+
+      </div>
+
+
+      <!-- CARDS -->
+      <div id="destinationGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+
+        <!-- GANDIKOTA -->
+        <article data-region="south"
+          onclick="openPlace('gandikota')"
+          class="destination-card cursor-pointer bg-ivory rounded-3xl overflow-hidden">
+
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=900&q=80"
+              class="w-full h-full object-cover"
+              alt="Gandikota">
+
+            <span class="absolute top-5 left-5 bg-sand text-charcoal px-4 py-2 rounded-full text-xs font-bold">
+              ANDHRA PRADESH
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-forest">Gandikota</h3>
+
+            <p class="text-charcoal/60 mt-2">
+              The canyon landscape of India.
+            </p>
+
+            <div class="flex justify-between items-center mt-5">
+              <span class="text-sm text-terracotta font-semibold">
+                South India
+              </span>
+
+              <span class="text-sm font-bold">
+                View Story →
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ZIRO -->
+        <article data-region="northeast"
+          onclick="openPlace('ziro')"
+          class="destination-card cursor-pointer bg-ivory rounded-3xl overflow-hidden">
+
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="https://images.openai.com/static-rsc-4/VtCqCUZcZCIxnsmM-yhcroKlIwjLDG11f7DOISBPpqNqC9GYIpSXGooCKoSubQLjVtmUoptglHiycNNxMEpd3ROCMjeHYBmnwccjVKhkjjsEFbBiNZLro2ltL2D9qfhOaq0mKxmS_92YViWQjAld154RiMT5gHc7VzBzp5_LmoM?purpose=inline"
+              class="w-full h-full object-cover"
+              alt="Ziro Valley">
+
+            <span class="absolute top-5 left-5 bg-sand text-charcoal px-4 py-2 rounded-full text-xs font-bold">
+              ARUNACHAL PRADESH
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-forest">Ziro Valley</h3>
+
+            <p class="text-charcoal/60 mt-2">
+              Green fields surrounded by mountains.
+            </p>
+
+            <div class="flex justify-between items-center mt-5">
+              <span class="text-sm text-terracotta font-semibold">
+                Northeast
+              </span>
+
+              <span class="text-sm font-bold">
+                View Story →
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- DHANUSHKODI -->
+        <article data-region="south"
+          onclick="openPlace('dhanushkodi')"
+          class="destination-card cursor-pointer bg-ivory rounded-3xl overflow-hidden">
+
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="https://images.openai.com/static-rsc-4/96OLa0s0M23FvZGlsLsheEKTwrOjJos0J2vrDHVDEyREiRtWYx6zVoGMN2v9gVDwaSRnvpOBN0llh7XXc4_aiANhZPaNFmBqAAKrZnWy5npFYVSFPAuFSNbc-gmI8w9vDVZggSrn4VE2VjjdcFA3RAEP3Ijw3zvpe8Dq-PGCP2U?purpose=inline"
+              class="w-full h-full object-cover"
+              alt="Dhanushkodi">
+
+            <span class="absolute top-5 left-5 bg-sand text-charcoal px-4 py-2 rounded-full text-xs font-bold">
+              TAMIL NADU
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-forest">Dhanushkodi</h3>
+
+            <p class="text-charcoal/60 mt-2">
+              Where the land meets two seas.
+            </p>
+
+            <div class="flex justify-between items-center mt-5">
+              <span class="text-sm text-terracotta font-semibold">
+                South India
+              </span>
+
+              <span class="text-sm font-bold">
+                View Story →
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- MAJULI -->
+        <article data-region="east"
+          onclick="openPlace('majuli')"
+          class="destination-card cursor-pointer bg-ivory rounded-3xl overflow-hidden">
+
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="https://images.openai.com/static-rsc-4/x_fdQfkYc0JV6tUI_UaxVh69HHM_Iptq45u_-IvBwqWSUfMvZOUchX3oMX2hYRK6dm3KIFr0-zcUMTOIZg9vKU2ynfxnZH3Hd_fqIn9yrJjQFVfgLbN-Rwo0iu9gTjKooTww_YjIf5fV6OFrU0y4mFwttBEL1kP2DgEFmBlvayk?purpose=inline"
+              class="w-full h-full object-cover"
+              alt="Majuli">
+
+            <span class="absolute top-5 left-5 bg-sand text-charcoal px-4 py-2 rounded-full text-xs font-bold">
+              ASSAM
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-forest">Majuli</h3>
+
+            <p class="text-charcoal/60 mt-2">
+              Island life in the middle of the Brahmaputra.
+            </p>
+
+            <div class="flex justify-between items-center mt-5">
+              <span class="text-sm text-terracotta font-semibold">
+                East India
+              </span>
+
+              <span class="text-sm font-bold">
+                View Story →
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- TAWANG -->
+        <article data-region="northeast"
+          onclick="openPlace('tawang')"
+          class="destination-card cursor-pointer bg-ivory rounded-3xl overflow-hidden">
+
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?auto=format&fit=crop&w=900&q=80"
+              class="w-full h-full object-cover"
+              alt="Tawang">
+
+            <span class="absolute top-5 left-5 bg-sand text-charcoal px-4 py-2 rounded-full text-xs font-bold">
+              ARUNACHAL PRADESH
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-forest">Tawang</h3>
+
+            <p class="text-charcoal/60 mt-2">
+              Mountains, monasteries and quiet roads.
+            </p>
+
+            <div class="flex justify-between items-center mt-5">
+              <span class="text-sm text-terracotta font-semibold">
+                Northeast
+              </span>
+
+              <span class="text-sm font-bold">
+                View Story →
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- HAMPI -->
+        <article data-region="south"
+          onclick="openPlace('hampi')"
+          class="destination-card cursor-pointer bg-ivory rounded-3xl overflow-hidden">
+
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="https://images.openai.com/static-rsc-4/iJsJFdFantAAf_XM4myY9jIEhuNldJloMCKaiN8EKkJB_vkQhnSt9qFCWXF1UD1rSNcBZw61SMclWRbdJVwiQ3oEdrdvHmWpGw4Shvu0MHoe-EqBm79liRDl993xhI9bI0VftJoIwQxnuBuKCWsnG3Zv1qeYOR6LJUjJfgjLZ5A?purpose=inline"
+              class="w-full h-full object-cover"
+              alt="Hampi">
+
+            <span class="absolute top-5 left-5 bg-sand text-charcoal px-4 py-2 rounded-full text-xs font-bold">
+              KARNATAKA
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-forest">Hampi</h3>
+
+            <p class="text-charcoal/60 mt-2">
+              Ancient ruins scattered across giant boulders.
+            </p>
+
+            <div class="flex justify-between items-center mt-5">
+              <span class="text-sm text-terracotta font-semibold">
+                South India
+              </span>
+
+              <span class="text-sm font-bold">
+                View Story →
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- LONAR -->
+        <article data-region="west"
+          onclick="openPlace('lonar')"
+          class="destination-card cursor-pointer bg-ivory rounded-3xl overflow-hidden">
+
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="https://images.openai.com/static-rsc-4/i3mVqM5P_3ErBX6sY80eeZIy-AXdojSbBPoqEM47vyQVtEtS5BGPkTwuQQVM1riGWRomrRYM7guOvyeeT6FrXLvdiJ3smKvJaDwgnvY6ywSZsN4PAINOAL95W3fkzik0j09Z_pv0YfV16jJkeh2Vt2KrVCOnqPmIrbJL6skXoa4?purpose=inline"
+              class="w-full h-full object-cover"
+              alt="Lonar Lake">
+
+            <span class="absolute top-5 left-5 bg-sand text-charcoal px-4 py-2 rounded-full text-xs font-bold">
+              MAHARASHTRA
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-forest">Lonar Lake</h3>
+
+            <p class="text-charcoal/60 mt-2">
+              A mysterious lake formed inside an impact crater.
+            </p>
+
+            <div class="flex justify-between items-center mt-5">
+              <span class="text-sm text-terracotta font-semibold">
+                West India
+              </span>
+
+              <span class="text-sm font-bold">
+                View Story →
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- CHEMBRA -->
+        <article data-region="south"
+          onclick="openPlace('chembra')"
+          class="destination-card cursor-pointer bg-ivory rounded-3xl overflow-hidden">
+
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="https://images.openai.com/static-rsc-4/Yz8kDlP5UyTHaQMBRRdccrAWr9NSQ7S6lVgN-z2f0E297KvilbxUR96zgLQY4wPCEZxIyQ-32gdMkZLxttSRTb47MgLvs8oJiL2Ra8asZ2uNHWHWTZ19lqaSncB62MqJ8PQ2XS253M9ppUPG5xrANxkkWxIFATtKin75TUQrdtE3Wa58fo9xAVjzUOy1jCjR?purpose=fullsize"
+              class="w-full h-full object-cover"
+              alt="Chembra Peak">
+
+            <span class="absolute top-5 left-5 bg-sand text-charcoal px-4 py-2 rounded-full text-xs font-bold">
+              KERALA
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-forest">Chembra Peak</h3>
+
+            <p class="text-charcoal/60 mt-2">
+              A mountain trail surrounded by Western Ghats.
+            </p>
+
+            <div class="flex justify-between items-center mt-5">
+              <span class="text-sm text-terracotta font-semibold">
+                South India
+              </span>
+
+              <span class="text-sm font-bold">
+                View Story →
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- MAWLYNNONG -->
+        <article data-region="northeast"
+          onclick="openPlace('mawlynnong')"
+          class="destination-card cursor-pointer bg-ivory rounded-3xl overflow-hidden">
+
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="https://images.openai.com/static-rsc-4/XQDc4B612V28PGKOzQ9UADR_N568aZ_Cfz5J-p_eawjMcC-bEsR0lXN0Y1blroaRj1qmv_0GM9fz4kAbxypNeQ7JuwczeDpiDalvnPQD8_hMnhTubmnY1bkpzrW6FuI7_iFPq2h7n4WyHKZH97BCWsHhauRdms4P8GMY4fG_Hkg?purpose=inline"
+              class="w-full h-full object-cover"
+              alt="Mawlynnong">
+
+            <span class="absolute top-5 left-5 bg-sand text-charcoal px-4 py-2 rounded-full text-xs font-bold">
+              MEGHALAYA
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-forest">Mawlynnong</h3>
+
+            <p class="text-charcoal/60 mt-2">
+              A peaceful village surrounded by greenery.
+            </p>
+
+            <div class="flex justify-between items-center mt-5">
+              <span class="text-sm text-terracotta font-semibold">
+                Northeast
+              </span>
+
+              <span class="text-sm font-bold">
+                View Story →
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- SPITI -->
+        <article data-region="north"
+          onclick="openPlace('spiti')"
+          class="destination-card cursor-pointer bg-ivory rounded-3xl overflow-hidden">
+
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="https://images.openai.com/static-rsc-4/n6ReXkLZpIdvpHQ7_9HzS2x_0vPjQRZ4tTmVW1vM_P23G3-Nzu7kNaEeyYMZlh0_-o5Vc7rjSt5qpuePABH3rWtsx_E7Q3Sc1A9IE55yf1Y4CVkjB5bpxyEmcaYEeP_3bJs15J1EWvS8u5ea__E87E7RocBd8xZeX5heOws7hko?purpose=inline"
+              class="w-full h-full object-cover"
+              alt="Spiti Valley">
+
+            <span class="absolute top-5 left-5 bg-sand text-charcoal px-4 py-2 rounded-full text-xs font-bold">
+              HIMACHAL PRADESH
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-forest">Spiti Valley</h3>
+
+            <p class="text-charcoal/60 mt-2">
+              High-altitude landscapes and ancient villages.
+            </p>
+
+            <div class="flex justify-between items-center mt-5">
+              <span class="text-sm text-terracotta font-semibold">
+                North India
+              </span>
+
+              <span class="text-sm font-bold">
+                View Story →
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- KUTCH -->
+        <article data-region="west"
+          onclick="openPlace('kutch')"
+          class="destination-card cursor-pointer bg-ivory rounded-3xl overflow-hidden">
+
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="https://images.openai.com/static-rsc-4/8jHumLpc3MKUL4hPx2Ow99NaC4BYUqW6mHOgNaM2RWYshrGrhKgN5iesIU-YC_6S-ukkxUnLhjK5F8n3s9z9BpQ_yvfCJeq08mHRk0twcY8JgignoPv76tEcApZJ_w5M_6btgUesY2AIOBRD_0IQ0qnpd6-DGFdHFvI-6hUaLY8?purpose=inline"
+              class="w-full h-full object-cover"
+              alt="Kutch">
+
+            <span class="absolute top-5 left-5 bg-sand text-charcoal px-4 py-2 rounded-full text-xs font-bold">
+              GUJARAT
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-forest">Kutch</h3>
+
+            <p class="text-charcoal/60 mt-2">
+              Vast salt landscapes and distinctive local crafts.
+            </p>
+
+            <div class="flex justify-between items-center mt-5">
+              <span class="text-sm text-terracotta font-semibold">
+                West India
+              </span>
+
+              <span class="text-sm font-bold">
+                View Story →
+              </span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ORCHHA -->
+        <article data-region="north"
+          onclick="openPlace('orchha')"
+          class="destination-card cursor-pointer bg-ivory rounded-3xl overflow-hidden">
+
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="https://images.openai.com/static-rsc-4/xlwnCKiNzP0a94UHVObS-RKQzFm9XWcY-Zf8zzlGivamxn6ajZxNil5NpyrFiFC4a4OxT8Us_8h89azW5sS_axHTRFZrMfgWxq7OyoWhPSejkqfXPyhN5mFQPH-idCZy9uBs2i6Xaex3W1J9Svlxe9pBywOC2YbLYcOO-MmhbWg?purpose=inline"
+              class="w-full h-full object-cover"
+              alt="Orchha">
+
+            <span class="absolute top-5 left-5 bg-sand text-charcoal px-4 py-2 rounded-full text-xs font-bold">
+              MADHYA PRADESH
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-forest">Orchha</h3>
+
+            <p class="text-charcoal/60 mt-2">
+              Riverside palaces and forgotten architectural stories.
+            </p>
+
+            <div class="flex justify-between items-center mt-5">
+              <span class="text-sm text-terracotta font-semibold">
+                Central India
+              </span>
+
+              <span class="text-sm font-bold">
+                View Story →
+              </span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- REGIONS -->
+  <section class="py-24 bg-forest">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-14">
+        <p class="text-sand uppercase tracking-[4px] text-sm font-bold">
+          Choose Your Direction
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-bold text-ivory mt-3">
+          Explore by Region
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+
+        <button onclick="filterPlaces('north')"
+          class="border border-white/20 rounded-2xl p-6 text-ivory hover:bg-sand hover:text-charcoal transition">
+          <div class="text-3xl">N</div>
+          <p class="mt-2 font-semibold">North</p>
+        </button>
+
+        <button onclick="filterPlaces('south')"
+          class="border border-white/20 rounded-2xl p-6 text-ivory hover:bg-sand hover:text-charcoal transition">
+          <div class="text-3xl">S</div>
+          <p class="mt-2 font-semibold">South</p>
+        </button>
+
+        <button onclick="filterPlaces('east')"
+          class="border border-white/20 rounded-2xl p-6 text-ivory hover:bg-sand hover:text-charcoal transition">
+          <div class="text-3xl">E</div>
+          <p class="mt-2 font-semibold">East</p>
+        </button>
+
+        <button onclick="filterPlaces('west')"
+          class="border border-white/20 rounded-2xl p-6 text-ivory hover:bg-sand hover:text-charcoal transition">
+          <div class="text-3xl">W</div>
+          <p class="mt-2 font-semibold">West</p>
+        </button>
+
+        <button onclick="filterPlaces('northeast')"
+          class="border border-white/20 rounded-2xl p-6 text-ivory hover:bg-sand hover:text-charcoal transition">
+          <div class="text-3xl">NE</div>
+          <p class="mt-2 font-semibold">Northeast</p>
+        </button>
+
+        <button onclick="filterPlaces('all')"
+          class="border border-white/20 rounded-2xl p-6 text-ivory hover:bg-sand hover:text-charcoal transition">
+          <div class="text-3xl">IN</div>
+          <p class="mt-2 font-semibold">All India</p>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- STORIES -->
+  <section id="stories" class="py-24 bg-ivory">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="mb-12">
+        <p class="text-terracotta uppercase tracking-[4px] text-sm font-bold">
+          Stories From The Road
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-bold text-forest mt-3">
+          More Than A Destination
+        </h2>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+
+        <article class="bg-white rounded-3xl overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80"
+            class="w-full h-80 object-cover"
+            alt="Mountain road">
+
+          <div class="p-8">
+            <p class="text-terracotta text-sm font-bold uppercase tracking-widest">
+              Travel Journal
+            </p>
+
+            <h3 class="text-3xl font-bold text-forest mt-3">
+              Why the road matters as much as the destination
+            </h3>
+
+            <p class="text-charcoal/60 leading-7 mt-4">
+              Some of India's most memorable experiences happen between
+              destinations — on quiet roads, small tea shops and unexpected
+              viewpoints.
+            </p>
+
+            <button class="mt-6 text-terracotta font-bold">
+              Read Story →
+            </button>
+          </div>
+        </article>
+
+
+        <article class="bg-white rounded-3xl overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80"
+            class="w-full h-80 object-cover"
+            alt="Forest">
+
+          <div class="p-8">
+            <p class="text-terracotta text-sm font-bold uppercase tracking-widest">
+              Slow Travel
+            </p>
+
+            <h3 class="text-3xl font-bold text-forest mt-3">
+              The beauty of travelling without a checklist
+            </h3>
+
+            <p class="text-charcoal/60 leading-7 mt-4">
+              Instead of rushing through attractions, slow travel encourages
+              you to stay longer, observe local life and experience the place
+              at its own pace.
+            </p>
+
+            <button class="mt-6 text-terracotta font-bold">
+              Read Story →
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- NATURE -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+        <div>
+          <p class="text-terracotta uppercase tracking-[4px] text-sm font-bold">
+            Nature's Hidden Wonders
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-bold text-forest mt-4">
+            Where nature tells its own story.
+          </h2>
+
+          <p class="text-charcoal/60 leading-8 mt-6">
+            India is home to landscapes that can feel like another world:
+            quiet forests, dramatic cliffs, remote valleys, unusual lakes
+            and coastlines stretching far beyond the busy beaches.
+          </p>
+
+          <div class="grid grid-cols-2 gap-5 mt-8">
+
+            <div class="border-l-4 border-sand pl-5">
+              <h3 class="font-bold text-forest text-xl">Mountains</h3>
+              <p class="text-sm text-charcoal/60 mt-2">
+                Valleys, peaks and remote villages.
+              </p>
+            </div>
+
+            <div class="border-l-4 border-terracotta pl-5">
+              <h3 class="font-bold text-forest text-xl">Coasts</h3>
+              <p class="text-sm text-charcoal/60 mt-2">
+                Quiet shores and forgotten islands.
+              </p>
+            </div>
+
+            <div class="border-l-4 border-sage pl-5">
+              <h3 class="font-bold text-forest text-xl">Forests</h3>
+              <p class="text-sm text-charcoal/60 mt-2">
+                Green landscapes away from cities.
+              </p>
+            </div>
+
+            <div class="border-l-4 border-sand pl-5">
+              <h3 class="font-bold text-forest text-xl">Deserts</h3>
+              <p class="text-sm text-charcoal/60 mt-2">
+                Wide horizons and changing landscapes.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+
+          <img
+            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=700&q=80"
+            class="w-full h-72 object-cover rounded-3xl"
+            alt="Mountain">
+
+          <img
+            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80"
+            class="w-full h-72 object-cover rounded-3xl mt-10"
+            alt="Forest">
+
+          <img
+            src="https://images.openai.com/static-rsc-4/G1h-AO46jLCJlGG_DPu8bXncEVo8761q4hVDFBxyJxH1l-n58ei2fTUZ3pb-5eZmRPu98GWwWOImyrk3tZwxY2TTNw1Niijv9a9_CXQFY8UpVvkbhQDKKV-kcZn4BcEOKsORxMHyry4ifcY_7WSEVRkOnODYbdrSUtMKHNueP8I?purpose=inline"
+            class="w-full h-72 object-cover rounded-3xl"
+            alt="Coast">
+
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80"
+            class="w-full h-72 object-cover rounded-3xl mt-10"
+            alt="Landscape">
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-24 bg-ivory">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-12">
+        <p class="text-terracotta uppercase tracking-[4px] text-sm font-bold">
+          Visual Journey
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-bold text-forest mt-3">
+          India Through A Different Lens
+        </h2>
+      </div>
+
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+        <div class="gallery-item md:row-span-2">
+          <img
+            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80"
+            class="w-full h-full min-h-[400px] object-cover rounded-3xl"
+            alt="Indian landscape">
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.openai.com/static-rsc-4/VtCqCUZcZCIxnsmM-yhcroKlIwjLDG11f7DOISBPpqNqC9GYIpSXGooCKoSubQLjVtmUoptglHiycNNxMEpd3ROCMjeHYBmnwccjVKhkjjsEFbBiNZLro2ltL2D9qfhOaq0mKxmS_92YViWQjAld154RiMT5gHc7VzBzp5_LmoM?purpose=inline"
+            class="w-full h-64 object-cover rounded-3xl"
+            alt="Travel">
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=700&q=80"
+            class="w-full h-64 object-cover rounded-3xl"
+            alt="Architecture">
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80"
+            class="w-full h-64 object-cover rounded-3xl"
+            alt="Forest">
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.openai.com/static-rsc-4/G1h-AO46jLCJlGG_DPu8bXncEVo8761q4hVDFBxyJxH1l-n58ei2fTUZ3pb-5eZmRPu98GWwWOImyrk3tZwxY2TTNw1Niijv9a9_CXQFY8UpVvkbhQDKKV-kcZn4BcEOKsORxMHyry4ifcY_7WSEVRkOnODYbdrSUtMKHNueP8I?purpose=inline"
+            class="w-full h-64 object-cover rounded-3xl"
+            alt="Coast">
+        </div>
+
+        <div class="gallery-item md:col-span-2">
+          <img
+            src="https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?auto=format&fit=crop&w=1000&q=80"
+            class="w-full h-64 object-cover rounded-3xl"
+            alt="Mountain">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="bg-terracotta py-24">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <p class="text-white/70 uppercase tracking-[5px] text-sm font-bold">
+        Your Next Journey
+      </p>
+
+      <h2 class="text-4xl md:text-6xl font-bold text-white mt-4">
+        Go where the map gets quiet.
+      </h2>
+
+      <p class="text-white/80 text-lg leading-8 mt-6 max-w-2xl mx-auto">
+        The most memorable journeys aren't always the most popular ones.
+        Pick a place, follow the road and discover something unexpected.
+      </p>
+
+      <a href="#destinations"
+        class="inline-block mt-9 bg-ivory text-charcoal px-8 py-4 rounded-full font-bold hover:bg-sand transition">
+        Start Exploring
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-ivory py-12">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <div>
+          <h2 class="text-2xl font-bold">
+            Hidden<span class="text-sand">India</span>
+          </h2>
+
+          <p class="text-white/50 leading-7 mt-4 max-w-sm">
+            A digital travel experience dedicated to India's lesser-known
+            destinations, stories and landscapes.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-4">Explore</h3>
+
+          <div class="space-y-3 text-white/50">
+            <a href="#destinations" class="block hover:text-sand">
+              Destinations
+            </a>
+
+            <a href="#stories" class="block hover:text-sand">
+              Stories
+            </a>
+
+            <a href="#gallery" class="block hover:text-sand">
+              Gallery
+            </a>
+
+            <a href="#about" class="block hover:text-sand">
+              About
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-4">Discover More</h3>
+
+          <p class="text-white/50 leading-7">
+            Mountains. Villages. Forests. Islands.
+            Ancient cities. Quiet roads.
+          </p>
+
+          <p class="text-sand mt-5 font-semibold">
+            Travel curious.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 mt-10 pt-6 text-center text-white/40 text-sm">
+        © 2026 HiddenIndia. Designed as a travel exploration project.
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!-- PLACE MODAL -->
+  <div id="placeModal"
+    class="modal hidden fixed inset-0 z-[100] bg-black/70 p-4 md:p-8 overflow-y-auto">
+
+    <div class="min-h-full flex items-center justify-center">
+
+      <div class="bg-ivory max-w-5xl w-full rounded-3xl overflow-hidden relative">
+
+        <button onclick="closePlace()"
+          class="absolute top-5 right-5 z-10 bg-white text-charcoal w-11 h-11 rounded-full text-xl font-bold shadow-lg hover:bg-sand transition">
+          ×
+        </button>
+
+        <div class="grid lg:grid-cols-2">
+
+          <div>
+            <img id="modalImage"
+              src=""
+              class="w-full h-[350px] lg:h-full min-h-[500px] object-cover"
+              alt="Destination">
+          </div>
+
+          <div class="p-7 md:p-10">
+
+            <p id="modalRegion"
+              class="text-terracotta uppercase tracking-[3px] text-sm font-bold">
+            </p>
+
+            <h2 id="modalTitle"
+              class="text-4xl font-bold text-forest mt-3">
+            </h2>
+
+            <p id="modalDescription"
+              class="text-charcoal/65 leading-8 mt-5">
+            </p>
+
+
+            <div class="grid grid-cols-2 gap-4 mt-7">
+
+              <div class="bg-white rounded-2xl p-5">
+                <p class="text-xs uppercase tracking-widest text-charcoal/40">
+                  Best Time
+                </p>
+
+                <p id="modalTime"
+                  class="font-bold text-forest mt-2">
+                </p>
+              </div>
+
+              <div class="bg-white rounded-2xl p-5">
+                <p class="text-xs uppercase tracking-widest text-charcoal/40">
+                  Experience
+                </p>
+
+                <p id="modalExperience"
+                  class="font-bold text-forest mt-2">
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="mt-8">
+
+              <h3 class="text-xl font-bold text-forest">
+                Highlights
+              </h3>
+
+              <ul id="modalHighlights"
+                class="mt-4 space-y-3 text-charcoal/70">
+              </ul>
+
+            </div>
+
+
+            <div class="mt-8 bg-forest text-ivory rounded-2xl p-5">
+              <p class="text-sm uppercase tracking-widest text-sand font-bold">
+                Travel Note
+              </p>
+
+              <p id="modalNote"
+                class="text-white/75 leading-7 mt-2">
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    const places = {
+
+      gandikota: {
+        title: "Gandikota",
+        region: "Andhra Pradesh · South India",
+        image: "https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=1200&q=85",
+        description: "Gandikota is known for its dramatic gorge formed by the Pennar River. The landscape combines rocky cliffs, wide open skies and historic architecture.",
+        time: "October – February",
+        experience: "Canyon views",
+        highlights: [
+          "Gandikota Gorge",
+          "Historic fort",
+          "Pennar River landscape",
+          "Sunrise and sunset views"
+        ],
+        note: "Carry water and plan enough time to explore the surrounding landscape."
+      },
+
+      ziro: {
+        title: "Ziro Valley",
+        region: "Arunachal Pradesh · Northeast India",
+        image:" https://images.openai.com/static-rsc-4/VtCqCUZcZCIxnsmM-yhcroKlIwjLDG11f7DOISBPpqNqC9GYIpSXGooCKoSubQLjVtmUoptglHiycNNxMEpd3ROCMjeHYBmnwccjVKhkjjsEFbBiNZLro2ltL2D9qfhOaq0mKxmS_92YViWQjAld154RiMT5gHc7VzBzp5_LmoM?purpose=inline",
+        description: "Ziro Valley is surrounded by green hills and known for its peaceful landscapes and distinctive local culture.",
+        time: "March – October",
+        experience: "Valley escape",
+        highlights: [
+          "Green rice fields",
+          "Mountain views",
+          "Local villages",
+          "Cultural experiences"
+        ],
+        note: "Mountain weather can change quickly, so pack suitable clothing."
+      },
+
+      dhanushkodi: {
+        title: "Dhanushkodi",
+        region: "Tamil Nadu · South India",
+        image: "https://images.unsplash.com/photo-1470214304380-aadaedcfff1b?auto=format&fit=crop&w=1200&q=85",
+        description: "At the southeastern edge of Tamil Nadu lies Dhanushkodi, a remote coastal landscape surrounded by sea and memories of an old settlement.",
+        time: "October – March",
+        experience: "Coastal exploration",
+        highlights: [
+          "Remote coastline",
+          "Sea views",
+          "Historic ruins",
+          "Pamban region"
+        ],
+        note: "Check local travel conditions before heading toward the remote areas."
+      },
+
+      majuli: {
+        title: "Majuli",
+        region: "Assam · East India",
+        image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85",
+        description: "Majuli is an island region in the Brahmaputra known for its river landscapes, cultural traditions and relaxed pace of life.",
+        time: "October – March",
+        experience: "Island culture",
+        highlights: [
+          "Brahmaputra landscapes",
+          "Satras",
+          "Local crafts",
+          "Village experiences"
+        ],
+        note: "River and ferry conditions can influence travel plans."
+      },
+
+      tawang: {
+        title: "Tawang",
+        region: "Arunachal Pradesh · Northeast India",
+        image: "https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?auto=format&fit=crop&w=1200&q=85",
+        description: "Tawang combines dramatic Himalayan scenery with monasteries, high-altitude lakes and mountain roads.",
+        time: "March – June",
+        experience: "Mountain journey",
+        highlights: [
+          "Tawang Monastery",
+          "Mountain passes",
+          "High-altitude lakes",
+          "Himalayan valleys"
+        ],
+        note: "Allow extra travel time because mountain routes can be long."
+      },
+
+      hampi: {
+        title: "Hampi",
+        region: "Karnataka · South India",
+        image: "https://images.unsplash.com/photo-1600100397608-f010c5b5a4e5?auto=format&fit=crop&w=1200&q=85",
+        description: "Hampi is a remarkable archaeological landscape where temples, ruins and enormous granite boulders create an unforgettable setting.",
+        time: "October – February",
+        experience: "History & ruins",
+        highlights: [
+          "Vijayanagara ruins",
+          "Ancient temples",
+          "Tungabhadra River",
+          "Boulder landscapes"
+        ],
+        note: "Comfortable footwear is useful because many sites require walking."
+      },
+
+      lonar: {
+        title: "Lonar Lake",
+        region: "Maharashtra · West India",
+        image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85",
+        description: "Lonar Lake sits inside a distinctive geological crater and is surrounded by forest and historical sites.",
+        time: "October – February",
+        experience: "Geological wonder",
+        highlights: [
+          "Crater lake",
+          "Forest surroundings",
+          "Ancient temples",
+          "Unique landscape"
+        ],
+        note: "Spend time exploring the surrounding area rather than only viewing the lake."
+      },
+
+      chembra: {
+        title: "Chembra Peak",
+        region: "Kerala · South India",
+        image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85",
+        description: "Chembra Peak offers a beautiful highland landscape in Kerala's Wayanad region, with forests, grasslands and mountain views.",
+        time: "September – February",
+        experience: "Trekking",
+        highlights: [
+          "Mountain trails",
+          "Wayanad scenery",
+          "Forest landscapes",
+          "Heart-shaped lake"
+        ],
+        note: "Trekking access and conditions can vary, so check locally before visiting."
+      },
+
+      mawlynnong: {
+        title: "Mawlynnong",
+        region: "Meghalaya · Northeast India",
+        image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85",
+        description: "Mawlynnong is a peaceful village surrounded by lush greenery and the landscapes of Meghalaya.",
+        time: "October – April",
+        experience: "Village escape",
+        highlights: [
+          "Green landscapes",
+          "Village walks",
+          "Living root bridges nearby",
+          "Local culture"
+        ],
+        note: "Respect local customs and keep the village environment clean."
+      },
+
+      spiti: {
+        title: "Spiti Valley",
+        region: "Himachal Pradesh · North India",
+        image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85",
+        description: "Spiti Valley is a high-altitude desert region featuring dramatic mountains, monasteries and remote settlements.",
+        time: "May – October",
+        experience: "High-altitude road trip",
+        highlights: [
+          "Mountain landscapes",
+          "Ancient monasteries",
+          "Remote villages",
+          "High-altitude roads"
+        ],
+        note: "Altitude and road conditions should be considered carefully when planning the journey."
+      },
+
+      kutch: {
+        title: "Kutch",
+        region: "Gujarat · West India",
+        image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85",
+        description: "Kutch is famous for its vast salt landscapes, colourful crafts, traditional villages and striking desert scenery.",
+        time: "November – February",
+        experience: "Desert exploration",
+        highlights: [
+          "Rann landscapes",
+          "Traditional crafts",
+          "Village culture",
+          "Desert sunsets"
+        ],
+        note: "The landscape changes dramatically between seasons, so plan according to the experience you want."
+      },
+
+      orchha: {
+        title: "Orchha",
+        region: "Madhya Pradesh · Central India",
+        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=85",
+        description: "Orchha is a historic town known for its riverside setting, palaces, temples and impressive architecture.",
+        time: "October – March",
+        experience: "Heritage exploration",
+        highlights: [
+          "Orchha Fort",
+          "Historic palaces",
+          "Riverside scenery",
+          "Temple architecture"
+        ],
+        note: "Early mornings are ideal for exploring the heritage area at a relaxed pace."
+      }
+
+    };
+
+
+    function openPlace(placeName) {
+
+      const place = places[placeName];
+
+      document.getElementById("modalImage").src = place.image;
+      document.getElementById("modalTitle").textContent = place.title;
+      document.getElementById("modalRegion").textContent = place.region;
+      document.getElementById("modalDescription").textContent = place.description;
+      document.getElementById("modalTime").textContent = place.time;
+      document.getElementById("modalExperience").textContent = place.experience;
+      document.getElementById("modalNote").textContent = place.note;
+
+      const highlights = document.getElementById("modalHighlights");
+
+      highlights.innerHTML = "";
+
+      place.highlights.forEach(item => {
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+          <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-sand text-charcoal text-xs font-bold mr-2">
+            ✓
+          </span>
+          ${item}
+        `;
+
+        highlights.appendChild(li);
+      });
+
+      document.getElementById("placeModal").classList.remove("hidden");
+
+      document.body.style.overflow = "hidden";
+    }
+
+
+    function closePlace() {
+
+      document.getElementById("placeModal").classList.add("hidden");
+
+      document.body.style.overflow = "auto";
+    }
+
+
+    document.getElementById("placeModal").addEventListener("click", function(event) {
+
+      if (event.target === this) {
+        closePlace();
+      }
+
+    });
+
+
+    document.addEventListener("keydown", function(event) {
+
+      if (event.key === "Escape") {
+        closePlace();
+      }
+
+    });
+
+
+    function filterPlaces(region) {
+
+      const cards = document.querySelectorAll(".destination-card");
+
+      cards.forEach(card => {
+
+        if (region === "all" || card.dataset.region === region) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+
+      });
+
+      document.getElementById("destinations").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+
+  </script>
+
+</body>
+</html>
